@@ -11,8 +11,7 @@ CREATE TABLE files (
     PRIMARY KEY(id),
     CONSTRAINT fk_folders
         FOREIGN KEY(folder_id)
-            REFERENCES folders(id)
-
+            REFERENCES folders(id),
     CONSTRAINT fk_owner
         FOREIGN KEY(owner_id)
             REFERENCES users(id)
